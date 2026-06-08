@@ -56,9 +56,6 @@ function LoadingScreen() {
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [stage, setStage] = useState("landing");
-  const [unlocked, setUnlocked] = useState(
-    () => window.localStorage.getItem("birthday-surprise-unlocked") === "true"
-  );
   const [confettiKey, setConfettiKey] = useState(0);
   const [activeSection, setActiveSection] = useState("wish");
 
@@ -106,20 +103,11 @@ export default function App() {
   const celebrate = () => setConfettiKey((key) => key + 1);
 
   const handleOpenSurprise = () => {
-    if (unlocked) {
-      setStage("surprise");
-      window.setTimeout(() => {
-        document.getElementById("wish")?.scrollIntoView({ behavior: "smooth" });
-      }, 250);
-      return;
-    }
-
     setStage("code");
   };
 
   const handleUnlock = () => {
     window.localStorage.setItem("birthday-surprise-unlocked", "true");
-    setUnlocked(true);
     celebrate();
     window.setTimeout(() => {
       setStage("surprise");
@@ -158,7 +146,7 @@ export default function App() {
             exit="exit"
             transition={{ duration: 0.75, ease: "easeOut" }}
           >
-            <Landing onOpen={handleOpenSurprise} unlocked={unlocked} />
+            <Landing onOpen={handleOpenSurprise} />
           </motion.div>
         )}
 

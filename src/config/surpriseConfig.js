@@ -2,7 +2,7 @@
 export const GIRLFRIEND_NAME = "My Queen";
 
 // Change the unlock code here. Keep it simple if she will type it on mobile.
-export const SECRET_CODE = "queen123";
+export const SECRET_CODE = "Jann";
 
 export const birthdayWish =
   "Happy Birthday to the girl who makes my world brighter.";

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FiChevronDown, FiHeart } from "react-icons/fi";
 import heroImage from "../assets/romantic-hero.png";
 
-export default function Landing({ onOpen, unlocked }) {
+export default function Landing({ onOpen }) {
   return (
     <section className="relative isolate min-h-screen overflow-hidden">
       <img
@@ -55,7 +55,7 @@ export default function Landing({ onOpen, unlocked }) {
               whileTap={{ scale: 0.97 }}
               className="romantic-button min-h-14 px-7 text-base sm:text-lg"
             >
-              {unlocked ? "Open Again, My Love" : "Open Your Surprise"}
+              Open Your Surprise
             </motion.button>
             <p className="max-w-sm text-sm leading-6 text-cream/70">
               Every little detail was chosen to make this moment feel close,
