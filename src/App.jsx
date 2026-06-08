@@ -4,6 +4,7 @@ import BirthdayWish from "./components/BirthdayWish.jsx";
 import ConfettiBurst from "./components/ConfettiBurst.jsx";
 import FinalSurprise from "./components/FinalSurprise.jsx";
 import FloatingHearts from "./components/FloatingHearts.jsx";
+import FriendshipQuotes from "./components/FriendshipQuotes.jsx";
 import GiftBox from "./components/GiftBox.jsx";
 import Landing from "./components/Landing.jsx";
 import LoveLetter from "./components/LoveLetter.jsx";
@@ -63,6 +64,7 @@ export default function App() {
     () => [
       { id: "wish", label: "Wish" },
       { id: "letter", label: "Letter" },
+      { id: "friendship", label: "Friendship" },
       { id: "memories", label: "Memories" },
       { id: "reasons", label: "Reasons" },
       { id: "gift", label: "Gift" },
@@ -175,6 +177,7 @@ export default function App() {
           >
             <BirthdayWish />
             <LoveLetter />
+            <FriendshipQuotes />
             <Memories />
             <Reasons />
             <GiftBox onOpenGift={celebrate} />

@@ -21,6 +21,26 @@ May your life always be filled with happiness, success, love, and endless smiles
 
 Happy Birthday, meri jaan. I love you so much ❤️`;
 
+// Edit these friendship quotes to make them more personal.
+export const friendshipQuotes = [
+  {
+    quote: "You are not only my love, you are also my safest friendship.",
+    note: "With you, even silence feels comfortable and beautiful.",
+  },
+  {
+    quote: "A best friend is someone who makes your heart feel understood.",
+    note: "You understand me in ways words sometimes cannot explain.",
+  },
+  {
+    quote: "The best bond is love that also feels like friendship.",
+    note: "That is what makes you so rare, so special, and so close to my heart.",
+  },
+  {
+    quote: "Distance can separate two people, but not two hearts that truly care.",
+    note: "No matter where we are, you still feel near to me.",
+  },
+];
+
 // To add real memories later: import images from src/assets and put them in image.
 export const memories = [
   {
