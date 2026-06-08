@@ -1,3 +1,4 @@
+import iceCreamChocolate from "../assets/memory-ice-cream-chocolate.png";
 import iceCreamCouple from "../assets/memory-ice-cream-couple.png";
 import iceCreamFavorite from "../assets/memory-ice-cream-favorite.png";
 import iceCreamMany from "../assets/memory-ice-cream-many.png";
@@ -71,6 +72,12 @@ export const memories = [
     caption: "So many little memories, each one as cute as a tiny ice cream cone.",
     image: iceCreamMany,
     accent: "from-wine via-blush to-roseGold",
+  },
+  {
+    title: "Chocolate Cone Love",
+    caption: "A rich little chocolate memory, sweet enough to make my heart smile.",
+    image: iceCreamChocolate,
+    accent: "from-wine via-roseGold to-cream",
   },
   {
     title: "Cone Full of Love",
