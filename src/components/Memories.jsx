@@ -31,8 +31,8 @@ export default function Memories() {
           <p className="section-kicker">Memories</p>
           <h2 className="section-title">Little moments, big feelings</h2>
           <p className="mt-5 max-w-xl text-lg leading-8 text-cream/75">
-            These cards are ready for real photos whenever you want to replace
-            the placeholders with your own favorite memories.
+            I added sweet ice-cream cone memories here, like tiny pictures of
+            happiness you can keep sliding through.
           </p>
         </motion.div>
 
@@ -99,6 +99,33 @@ export default function Memories() {
             >
               <FiChevronRight />
             </button>
+          </div>
+
+          <div className="mt-5 grid grid-cols-3 gap-2 sm:grid-cols-6">
+            {memories.map((item, index) => (
+              <button
+                key={`${item.title}-thumb`}
+                type="button"
+                onClick={() => setActive(index)}
+                className={`group relative aspect-square overflow-hidden rounded-2xl border transition ${
+                  active === index
+                    ? "border-roseGold shadow-glow"
+                    : "border-white/15 opacity-70 hover:opacity-100"
+                }`}
+                aria-label={`Preview ${item.title}`}
+              >
+                {item.image ? (
+                  <img
+                    src={item.image}
+                    alt=""
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
+                  />
+                ) : (
+                  <div className={`h-full w-full bg-gradient-to-br ${item.accent}`} />
+                )}
+                <span className="absolute inset-0 bg-plum/10" />
+              </button>
+            ))}
           </div>
         </div>
       </div>

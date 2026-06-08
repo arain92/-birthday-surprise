@@ -1,3 +1,8 @@
+import iceCreamCouple from "../assets/memory-ice-cream-couple.png";
+import iceCreamFavorite from "../assets/memory-ice-cream-favorite.png";
+import iceCreamMany from "../assets/memory-ice-cream-many.png";
+import iceCreamSmile from "../assets/memory-ice-cream-smile.png";
+
 // Change her name or nickname here.
 export const GIRLFRIEND_NAME = "My Queen";
 
@@ -44,28 +49,40 @@ export const friendshipQuotes = [
 // To add real memories later: import images from src/assets and put them in image.
 export const memories = [
   {
-    title: "Our First Cute Memory",
-    caption: "The kind of moment that stays soft in my heart.",
-    image: null,
+    title: "Our Ice Cream Memory",
+    caption: "Sweet like a cone, soft like a moment I never want to forget.",
+    image: iceCreamCouple,
     accent: "from-petal via-blush to-lavender",
   },
   {
     title: "Your Smile",
-    caption: "My favorite little piece of sunshine.",
-    image: null,
+    caption: "Your smile feels like strawberry ice cream on a perfect day.",
+    image: iceCreamSmile,
     accent: "from-cream via-roseGold to-petal",
   },
   {
     title: "My Favorite Person",
-    caption: "The one I would choose again and again.",
-    image: null,
+    caption: "If love had a flavor, it would taste like every sweet memory with you.",
+    image: iceCreamFavorite,
     accent: "from-lavender via-petal to-mintGlow",
   },
   {
-    title: "More memories coming soon",
-    caption: "Because our story still has so many beautiful pages left.",
-    image: null,
+    title: "Many Sweet Moments",
+    caption: "So many little memories, each one as cute as a tiny ice cream cone.",
+    image: iceCreamMany,
     accent: "from-wine via-blush to-roseGold",
+  },
+  {
+    title: "Cone Full of Love",
+    caption: "A little scoop of happiness for every time you made my day better.",
+    image: iceCreamCouple,
+    accent: "from-petal via-roseGold to-cream",
+  },
+  {
+    title: "More Sweet Memories",
+    caption: "More pictures, more smiles, and more beautiful memories coming soon.",
+    image: iceCreamMany,
+    accent: "from-lavender via-blush to-wine",
   },
 ];
 
